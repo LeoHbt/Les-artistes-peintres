@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="/assets/style.css" rel="stylesheet" />
+        <script defer src="assets/script.js"></script>
     </head>
     <body class="container mx-auto w-[90%] bg-[#4A1608] sm:w-[70%]">
         <header class="flex flex-col">
@@ -13,12 +14,12 @@
             </div>
             <nav>
                 <ul class="flex rounded-sm bg-[#440B02] text-center text-amber-50 max-[881px]:flex-col max-[881px]:text-start">
-                    <li class="artist-names">Picasso</li>
-                    <li class="artist-names">Caillebotte</li>
-                    <li class="artist-names">Vermeer</li>
-                    <li class="artist-names">Kadinsky</li>
-                    <li class="artist-names">Monet</li>
-                    <li class="artist-names">Van Gogh</li>
+                    <li id="divPeintre " class="artist-names">Picasso</li>
+                    <li id="divPeintre " class="artist-names">Caillebotte</li>
+                    <li id="divPeintre " class="artist-names">Vermeer</li>
+                    <li id="divPeintre " class="artist-names">Kadinsky</li>
+                    <li id="divPeintre " class="artist-names">Monet</li>
+                    <li id="divPeintre " class="artist-names">Van Gogh</li>
                 </ul>
             </nav>
         </header>
@@ -35,13 +36,14 @@
             </section>
             <section class="flex max-[881px]:flex-col">
                 <ul class="w-[20%] min-w-[200px] bg-[#78A999] p-3 text-white max-[881px]:w-full">
-                    <li class="m-auto w-[80%] border-b py-1 font-semibold">Nos Productions</li>
-                    <li class="m-auto w-[80%] border-b py-1 font-semibold">Qui Sommes Nous</li>
-                    <li class="m-auto w-[80%] border-b py-1 font-semibold">Notre Philosophie</li>
-                    <li class="m-auto w-[80%] border-b py-1 font-semibold">Nous Contacter</li>
+                    <li class="hover:cursor-pointer hover:text-[#EA3203] m-auto w-[80%] border-b py-1 font-semibold">Nos Productions</li>
+                    <li class="hover:cursor-pointer hover:text-[#EA3203] m-auto w-[80%] border-b py-1 font-semibold">Qui Sommes Nous</li>
+                    <li class="hover:cursor-pointer hover:text-[#EA3203] m-auto w-[80%] border-b py-1 font-semibold">Notre Philosophie</li>
+                    <li class="hover:cursor-pointer hover:text-[#EA3203] m-auto w-[80%] border-b py-1 font-semibold">Nous Contacter</li>
                 </ul>
                 <!-- GALLERIE PICASSO -->
-                <div class="hidden w-[80%] grow flex-col bg-[#DDD9C6] p-7 max-[881px]:w-full">
+                <div id="divPicasso" class="divPeintre hidden w-[80%] grow flex-col bg-[#DDD9C6] p-7 max-[881px]:w-full">
+                    <div class="divAnimation">
                     <h3 class="w-full text-3xl font-semibold text-[#425D63]">Galerie Picasso</h3>
                     <div class="flex flex-wrap max-[1223px]:justify-center">
                         <figure class="w-[300px] self-end p-5 max-[1223px]:w-[250px] max-[795px]:w-[400px]">
@@ -69,9 +71,10 @@
                             <figcaption class="bg-black p-1 text-center text-white">La Femme qui pleure (1937)</figcaption>
                         </figure>
                     </div>
+                    </div>
                 </div>
                 <!-- GALLERIE CAILLEBOTTE -->
-                <div class="hidden w-[80%] grow flex-col bg-[#DDD9C6] p-7 max-[881px]:w-full">
+                <div id="divCaillebotte" class="divPeintre hidden w-[80%] grow flex-col bg-[#DDD9C6] p-7 max-[881px]:w-full">
                     <h3 class="w-full text-3xl font-semibold text-[#425D63]">Galerie Caillebotte</h3>
                     <div class="flex flex-wrap max-[1223px]:justify-center">
                         <figure class="w-[300px] self-end p-5 max-[1223px]:w-[250px] max-[795px]:w-[400px]">
@@ -97,7 +100,7 @@
                     </div>
                 </div>
                 <!-- GALLERIE VERMEER -->
-                <div class="hidden w-[80%] grow flex-col bg-[#DDD9C6] p-7 max-[881px]:w-full">
+                <div id="divVermeer" class="divPeintre hidden w-[80%] grow flex-col bg-[#DDD9C6] p-7 max-[881px]:w-full">
                     <h3 class="w-full text-3xl font-semibold text-[#425D63]">Galerie Vermeer</h3>
                     <div class="flex flex-wrap max-[1223px]:justify-center">
                         <figure class="w-[300px] self-end p-5 max-[1223px]:w-[250px] max-[795px]:w-[400px]">
@@ -115,7 +118,7 @@
                     </div>
                 </div>
                 <!-- GALLERIE KADINSKY -->
-                <div class="hidden w-[80%] grow flex-col bg-[#DDD9C6] p-7 max-[881px]:w-full">
+                <div id="divKadinsky" class="divPeintre hidden w-[80%] grow flex-col bg-[#DDD9C6] p-7 max-[881px]:w-full">
                     <h3 class="w-full text-3xl font-semibold text-[#425D63]">Galerie Kadinsky</h3>
                     <div class="flex flex-wrap max-[1223px]:justify-center">
                         <figure class="w-[300px] self-end p-5 max-[1223px]:w-[250px] max-[795px]:w-[400px]">
@@ -145,7 +148,7 @@
                     </div>
                 </div>
                 <!-- GALLERIE MONET -->
-                <div class="hidden w-[80%] grow flex-col bg-[#DDD9C6] p-7 max-[881px]:w-full">
+                <div id="divMonet" class="divPeintre hidden w-[80%] grow flex-col bg-[#DDD9C6] p-7 max-[881px]:w-full">
                     <h3 class="w-full text-3xl font-semibold text-[#425D63]">Galerie Monet</h3>
                     <div class="flex flex-wrap max-[1223px]:justify-center">
                         <figure class="w-[300px] self-end p-5 max-[1223px]:w-[250px] max-[795px]:w-[400px]">
@@ -174,7 +177,7 @@
                     </div>
                 </div>
                 <!-- GALLERIE VAN GOGH -->
-                <div class="w-[80%] grow flex-col bg-[#DDD9C6] p-7 max-[881px]:w-full">
+                <div id="divVanGogh" class="divPeintre w-[80%] grow flex-col bg-[#DDD9C6] p-7 max-[881px]:w-full">
                     <h3 class="w-full text-3xl font-semibold text-[#425D63]">Galerie Van Gogh</h3>
                     <div class="flex flex-wrap max-[1223px]:justify-center">
                         <figure class="w-[300px] self-end p-5 max-[1223px]:w-[250px] max-[795px]:w-[400px]">

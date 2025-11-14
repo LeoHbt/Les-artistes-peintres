@@ -16,3 +16,32 @@ h1 {
 h3 {
     width: 100%;
 }
+
+@keyframes test {
+    0% {
+        transform: translateY(-150px);
+    }
+    30% {
+        transform: translateY(5px);
+    }
+    50% {
+        transform: translateY(-70px);
+    }
+    70% {
+        transform: translateY(2px);
+    }
+    80% {
+        transform: translateY(-25px);
+    }
+    /* 90% {
+        transform: translateY(-15px);
+    } */
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.divAnimation {
+    animation: test 2s ease-in-out;
+    z-index: -10;
+}
