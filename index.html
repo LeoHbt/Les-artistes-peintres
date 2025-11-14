@@ -5,14 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="/assets/style.css" rel="stylesheet" />
     </head>
-    <body class="container mx-auto w-[70%] bg-[#4A1608]">
+    <body class="container mx-auto w-[90%] bg-[#4A1608] sm:w-[70%]">
         <header class="flex flex-col">
             <div class="flex items-center">
                 <img class="p-3" src="assets/img/logo-art-peinture.png" alt="" />
                 <h1 class="pl-5 text-7xl text-amber-50">Les Artistes Peintres</h1>
             </div>
             <nav>
-                <ul class="flex rounded-sm bg-[#440B02] text-center text-amber-50">
+                <ul class="flex rounded-sm bg-[#440B02] text-center text-amber-50 max-[881px]:flex-col max-[881px]:text-start">
                     <li class="artist-names">Picasso</li>
                     <li class="artist-names">Caillebotte</li>
                     <li class="artist-names">Vermeer</li>
@@ -24,7 +24,7 @@
         </header>
         <main>
             <section class="mt-2 flex bg-[#78A999] p-2">
-                <img id="imageBaniere" class="w-[200px] resize-none ps-1.5" src="assets/img/img_baniere.png" alt="" />
+                <img id="imageBaniere" class="w-[200px] resize-none ps-1.5 max-[881px]:hidden" src="assets/img/img_baniere.png" alt="" />
                 <div class="pl-3">
                     <h2 class="pb-5 text-4xl font-bold text-white">Ce que nous faisons</h2>
                     <p class="pt text-justify font-medium text-white">
@@ -33,33 +33,33 @@
                     </p>
                 </div>
             </section>
-            <section class="flex">
-                <ul class="w-[20%] min-w-[200px] bg-[#78A999] p-3 text-white">
+            <section class="flex max-[881px]:flex-col">
+                <ul class="w-[20%] min-w-[200px] bg-[#78A999] p-3 text-white max-[881px]:w-full">
                     <li class="m-auto w-[80%] border-b py-1 font-semibold">Nos Productions</li>
                     <li class="m-auto w-[80%] border-b py-1 font-semibold">Qui Sommes Nous</li>
                     <li class="m-auto w-[80%] border-b py-1 font-semibold">Notre Philosophie</li>
                     <li class="m-auto w-[80%] border-b py-1 font-semibold">Nous Contacter</li>
                 </ul>
-                <div class="flex w-[80%] grow flex-col bg-[#DDD9C6] p-7">
+                <div class="flex w-[80%] grow flex-col bg-[#DDD9C6] p-7 max-[881px]:w-full">
                     <h3 class="w-full text-3xl font-semibold text-[#425D63]">Galerie Caillebotte</h3>
-                    <div class="flex flex-wrap">
-                        <figure class="w-[300px] self-end p-5">
+                    <div class="flex flex-wrap max-[1223px]:justify-center">
+                        <figure class="w-[300px] self-end p-5 max-[1223px]:w-[250px] max-[795px]:w-[400px]">
                             <img src="assets/img/Jour_de_pluie_à_Paris.png" alt="" />
                             <figcaption class="bg-black p-1 text-center text-white">Jour de pluie à Paris (1877)</figcaption>
                         </figure>
-                        <figure class="w-[300px] self-end p-5">
+                        <figure class="w-[300px] self-end p-5 max-[1223px]:w-[250px] max-[795px]:w-[400px]">
                             <img src="assets/img/Peintres_en_batiment.png" alt="" />
                             <figcaption class="bg-black p-1 text-center text-white">Les Peintres en bâtiment (1877)</figcaption>
                         </figure>
-                        <figure class="w-[300px] self-end p-5">
+                        <figure class="w-[300px] self-end p-5 max-[1223px]:w-[250px] max-[795px]:w-[400px]">
                             <img src="assets/img/Raboteurs_de_parquet.png" alt="" />
                             <figcaption class="bg-black p-1 text-center text-white">Les Raboteurs de Parquet (1877)</figcaption>
                         </figure>
-                        <figure class="w-[300px] self-end p-5">
+                        <figure class="w-[300px] self-end p-5 max-[1223px]:w-[250px] max-[795px]:w-[400px]">
                             <img src="assets/img/Périssoires_sur_l’Yerres.png" alt="" />
                             <figcaption class="bg-black p-1 text-center text-white">Périssoires sur l'Yerres (1877)</figcaption>
                         </figure>
-                        <figure class="w-[300px] self-end p-5">
+                        <figure class="w-[300px] self-end p-5 max-[1223px]:w-[250px] max-[795px]:w-[400px]">
                             <img src="assets/img/Autoportrait_Caillebotte.png" alt="" />
                             <figcaption class="bg-black p-1 text-center text-white">Autoportrait (1877)</figcaption>
                         </figure>

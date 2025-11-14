@@ -2,7 +2,7 @@
 @import "tailwindcss";
 
 .artist-names {
-    @apply m-2 mx-0 border-r-2 border-[#4A1608] px-5 py-1 align-middle text-base hover:cursor-pointer hover:bg-[#401B0D] hover:text-[#EA3203];
+    @apply m-2 mx-0 border-r-2 border-[#4A1608] px-5 py-1 align-middle text-base hover:cursor-pointer hover:bg-[#401B0D] hover:text-[#EA3203] max-[881px]:border-r-0;
 }
 
 h1 {
