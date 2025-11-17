@@ -43,5 +43,4 @@ h3 {
 
 .divAnimation {
     animation: test 2s ease-in-out;
-    z-index: -10;
 }
